@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context="com.alansmitheeprogramming.test1.ArticleActivity">
+
+
+    <FrameLayout
+        android:id="@+id/progressBarHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:animateLayoutChanges="true"
+        android:background="#000000"
+        android:visibility="gone">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/versus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/team1"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        android:text="vs"/>
+
+    <TextView
+        android:id="@+id/team1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textSize="28sp"
+        android:textColor="#ffffff"
+        android:text="--"
+        tools:text="team1"/>
+
+    <TextView
+        android:id="@+id/team2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/versus"
+        android:textSize="28sp"
+        android:textColor="#ffffff"
+        android:text="--"
+        tools:text="team2"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/team2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        android:text="------------"
+        tools:text="09\/03\/2018 в 14:30 МСК"/>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/time"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/header1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="27sp"
+                android:textColor="#ffffff"
+                tools:text="header1"/>
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                tools:text="Stats из пяти своих последних встреч одержал четыре виктории, проиграв одну своему соотечественнику Trap'у 1:2. На протяжении первых двух этапов игрок показывал себя достаточно неплохо. Он на первом этапе занял первую позицию в своей группе \'G', набрав два очка. Дальше игроку везло меньше, после чего он с трудом, но все же смог занять вторую позицию в своем квартете, с набранными двумя очками. Следствием всего этого стала путевка в плей-офф."/>
+
+            <TextView
+                android:id="@+id/header2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="27sp"
+                android:textColor="#ffffff"
+                tools:text="header2"/>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                tools:text="Classic показывает себя очень хорошо в этом календарном году. Из пяти своих последних игр игрок одержал победы в четырех из них, но при этом проиграл одну игру соотечественнику и сегодняшнему оппоненту stats'у со счетом 1:2. На первом этапе турнира киберспортсмен занял второе место в своей группе, уступив лидерство тому же stats'у. На следующей стадии чемпионата Classic'у удалось завоевать первую строчку в группе, что помогло ему выйти в плей-офф турнира."/>
+
+            <TextView
+                android:id="@+id/header3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="27sp"
+                android:textColor="#ffffff"
+                tools:text="header3"/>
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                tools:text="Последняя встреча между этими двумя игроками была очень напряженная, но все-таки победу вырвал Stats со счетом 2:1\n"/>
+
+            <TextView
+                android:id="@+id/predictionLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="ПРОГНОЗ"
+                android:textSize="27sp"
+                android:textColor="#ffffff"
+                tools:text="PREDICTION"/>
+
+            <TextView
+                android:id="@+id/prediction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="TextView"
+                android:textSize="24sp"
+                android:textColor="#ffffff"
+                tools:text=" Наши эксперты подготовили прогноз на данный матч и он таков: этот матч выиграет игрок с именем Classic. Он находится в лучшей форме, чем оппонент, да и к тому же у него было больше времени на восстановление после своей последней встречи."/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
